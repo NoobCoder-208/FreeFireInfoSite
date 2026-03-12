@@ -105,7 +105,7 @@ def apis(idd, region):
     except requests.exceptions.RequestException as e:
         print(f"API request to {endpoint} failed: {e}")
         raise
-@app.route('/accinfo', methods=['GET'])
+@app.route('/info', methods=['GET'])
 def get_player_info():
     try:
         uid = request.args.get('uid')
